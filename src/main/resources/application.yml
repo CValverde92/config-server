@@ -1,9 +1,13 @@
-# Configuración común a todos los servicios
-spring:
-  jackson:
-    date-format: yyyy-MM-dd
-    time-zone: UTC
+server:
+  port: 8888
 
-logging:
-  level:
-    root: INFO
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/CValverde92/config-repo.git
+          search-paths: '{application}'
+          clone-on-start: true
