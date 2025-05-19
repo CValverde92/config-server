@@ -1,0 +1,9 @@
+# Configuración común a todos los servicios
+spring:
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: UTC
+
+logging:
+  level:
+    root: INFO
