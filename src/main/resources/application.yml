@@ -9,5 +9,6 @@ spring:
       server:
         git:
           uri: https://github.com/CValverde92/config-repo.git
-          search-paths: '{application}'
+          default-label: develop
+          search-paths: 'services/{application},services'
           clone-on-start: true
